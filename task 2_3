@@ -1,0 +1,33 @@
+def join(thestring):
+    good = ""
+    for i in thestring:
+        good += i
+    return good
+#___________
+
+def cheekA(thestring):
+    x = 0
+    for i in thestring:
+        if i== 'a':
+            x+=1
+    print('count A is: ',x)
+#_______________
+
+def reblace (thestring):
+    for i in range(len(thestring)):
+        if thestring[i]=='d':
+            thestring[i]='c'
+        if thestring[i] == 'h':
+            thestring[i] = 'k'
+    print(thestring)
+#_______________
+def beletI(thestring):
+    for i in range(len(thestring)):
+        if thestring[i]=='l':
+            thestring.pop(i)
+    print(thestring)
+#--------------------call--------------------------------
+txt=['a','b','d','a','l','r','a','h','m','a','n']
+print(join(txt))
+print(cheekA(txt))
+print(reblace(txt))
