@@ -1,0 +1,23 @@
+def join(thestring):
+    string = ""
+    for i in thestring:
+        string += i
+    return string
+
+def cheekA(thestring):
+    x = 0
+    for i in thestring:
+        if i== 'A':
+            x+=1
+    print('count A is: ',x)
+
+def reblace (thestring):
+    for i in range(len(thestring)):
+        if thestring[i]=='M':
+            thestring[i]='N'
+    print(thestring)
+#--------------------call--------------------------------
+lest=['R','A','M','A','D','A','N','K','A','R','E','E','M']
+print(join(lest))
+print(cheekA(lest))
+print(reblace(lest))
