@@ -1,0 +1,18 @@
+while True:
+    a= input('first number = ' )
+    b= input('second number = ' )
+    operation = input('input the /,*,+,- : ' )
+    if operation == '+':
+        z= float (a)+ float (b)
+        print(z)
+    elif operation =='-':
+        z= float (a)- float (b)
+        print(z)
+    elif operation=='*':
+        z= float (a)* float (b)
+        print(z)
+    elif operation=='/':
+        z= float (a)/ float (b)
+        print(z)
+    else:
+        print('that is not true operation')
