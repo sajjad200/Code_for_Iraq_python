@@ -1,0 +1,13 @@
+while True:
+    name = input('Enter the name : ')
+
+    def convert(st):
+        list1 = []
+        list1[:0] = name
+        return list1
+
+    list2 = convert(name)
+    for i in list2:
+        if i!='t':
+            print('not there t')
+            break
