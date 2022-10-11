@@ -1,0 +1,33 @@
+#________________________1___
+class Car:
+    def __init__(self,country,model_year,color,fuel_type):
+        self.country=country
+        self.model_year=model_year
+        self.color=color
+        self.fuel_type=fuel_type
+
+    def cheek_model(self): #cheek year model
+        if int(self.model_year)>2000:
+            return 'new'
+        else:
+            return 'old'
+
+#________________________2___
+class Args(Car):
+    def __init__(self,country,model_year,color,fuel_type,car_type,vin_number):
+        Car.__init__()
+        self.car_type=car_type
+        self.vin_number=vin_number
+        self.country = country
+        self.model_year = model_year
+        self.color = color
+        self.fuel_type = fuel_type
+
+    def cheek_prestige(self): # cheek if the car is mercedes or not
+        if self.car_type=='mercedes':
+            return 'this car is it expensive'
+        else:
+            return 'this car is it cheep'
+
+    def information(self):
+        return self.country + self.car_type + self.model_year
