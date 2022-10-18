@@ -1,0 +1,22 @@
+def calc(a,b):
+    operation = input('input the /,*,+,- : ' )
+    if operation == '+':
+        z= float (a)+ float (b)
+        print(z)
+    elif operation =='-':
+        z= float (a)- float (b)
+        print(z)
+    elif operation=='*':
+        z= float (a)* float (b)
+        print(z)
+    elif operation=='/':
+        z= float (a)/ float (b)
+        print(z)
+    else:
+        print('that is not true operation')
+
+
+while True:
+    x = input('first number = ')
+    y = input('second number = ')
+    calc(x,y)
