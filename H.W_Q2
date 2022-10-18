@@ -1,0 +1,12 @@
+def multab(n):
+    # n it is no.of multiplication table
+    x=int(n)
+    for i in range(11):
+        for j in range(x+1):
+            m=i*j
+        print(f'the reselt {i}*{j}={m}')
+
+while True:
+    print('\n')
+    x= input('enter no.of multiplication table :  ')
+    multab(x)
