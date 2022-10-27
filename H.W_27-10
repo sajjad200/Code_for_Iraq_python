@@ -1,0 +1,30 @@
+#Write a program that contains a list of ten names and then prints the longest name and the number of its letters and then arranges the list alphabetically and copies it to another list and then prints the array so that the first letter of each name is a capital letter and the rest of the letters are lowercase
+
+name_list=['sajjad','rawaa','ali','tariq','shfi','osama','mohammed','rusul','arslan','azad'] #هذه القائمة بعشرة اسماء
+
+def lenthofname(name): #هذه الدالة لتحديد طول كل عنصر في القائمة
+    longname = ''
+    for i in name:
+       if len(i) > len(longname):
+            longname=i
+            char=len(i)
+    print(f'the longer name it is the  {longname} have: {char} Letters')
+
+def alfabata(name):  # هذه الدالة لترتيب الكلمات في القائمة ابجديا
+    newnamelist=name #تم انشاء قائمة ثاني لها نفس قيم تالقائمة الاساسية لكن ان عناصر هذه القائمة سيتم ازالتها تدريجيا دون ان تؤثر على القائمة الاساسية
+    altalist=[] # لانشاء قائمة فارغة يتم اضافة اليها الكلمات حسب التسلسل الابجدي لاحقا
+    while len(newnamelist) != 0: # يتحقق الشرط طالما كان هنالك عناصر في القائمة
+        firstname=min(newnamelist) #لمعرفة ترتيب الاحرف الابجدية حيث ان القيمة الاصغر هي للقيمة الحرف السابق اولا حسب الترتيب الابجدي
+        newnamelist.remove(firstname)
+        altalist.append(firstname)
+    print('Arrange the list in alphabetical order: \n',altalist)
+
+def captelcar(name): #هذه الدالة لجعل الاحرف الاولى من القائمة بحروف كبيرة
+    stringname=' '.join(name) # لتحويل القائمة الى نص
+    captnamestring=stringname.title() # لتحويل الحروف الاولى الى حروف كبيرة
+    captilistname=captnamestring.split(' ') # لاعادة النص الى قائمة
+    print('Make the list in capital letters: \n',captilistname)
+
+lenthofname(name_list)
+captelcar(name_list)
+alfabata(name_list)
