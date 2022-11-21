@@ -1,0 +1,9 @@
+#Sort star shapes sequentially
+one_star=['*'] #in first inter the number of star manually 
+two_star=['**']
+three_star=['***']
+four_star=['****']
+five_star=['*****']
+deg={1:one_star,2:two_star,3:three_star,4:four_star,5:five_star} # Create a dictionary  containing the stars, where the key to each list is the number of stars
+for i in deg: # Call values from dictionary sequentially
+    print(deg[i])
